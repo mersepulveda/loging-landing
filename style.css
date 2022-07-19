@@ -4,9 +4,7 @@
     font-family:sans-serif ;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
-
 
 header{
     display: flex;
@@ -37,7 +35,7 @@ nav ul li a{
     height:3px;
     width: 0%;
     background: #383E56; 
-    position:absolute;
+    position: absolute;
     left:0%;
     bottom:-12px;
     transition:0.4s ease-out;
@@ -46,25 +44,21 @@ nav ul li a{
     width: 100%;
 }
 /*main*/
-.main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 .box{
     border: 5px solid #FB743E;
     background-color: #FB743E;
     filter: alpha(opacity=50);
     padding: 40px;
     margin-top: 80px;
-    margin-left:290px;
+    margin-left:315px;
     width: 800px;
     height: 400;
     border-radius: 30px 30px 30px 30px;
     display: flex;
     flex-direction: row-reverse;
     justify-content:flex-end;
+    align-items: center;
     
 }
 /*hero*/
@@ -73,10 +67,12 @@ nav ul li a{
     width: 100%;
     background-image: url(../landing-page/imagenes/wallpaper4.jpg);
     background-position: center;
+    background-attachment: scroll;
     background-size:cover
     background-repeat:no-repeat;
     margin-top:0px;
-    position:fixed;
+    padding:0px;
+    display:inline-block;
 }
 .box spam{
     color: #383E56;
@@ -93,18 +89,58 @@ nav ul li a{
     margin:15px;
 }
     
-#about{
-    background-color:#9FB8AD;
-    height:100px;
+/*mision section*/
+.mision_section{
+    height:450px;
     width:100%;
     margin-top: 60px;
+    margin-bottom: 60px;
     justify-content: space-around;
-    gap: 40px;
+    text-align: center;
+    color: #FB743E;
+    background-color:#9FB8AD;
+    display: inline-block;
 }
-#about p{
-font weight: 600px;
-font-size: 30px;
-color: #FB743E; 
+.card_container {
+   display:flex;   
+   margin-top: 80px; 
+   gap: 15rem;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.card_content{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+/*contact-us*/
+.contact-us{
+    background-color: #383E56;
+    padding-top: 100px;
+    height:350px;
+    display:flex;
+    align-content: stretch;
+    justify-content: space-around;
+    list-style: none;
+
+}
+.contact{
+    color:#9FB8AD;
+    text-align: center;  
+}
+.contact ul li {
+list-style: none;
+}
+.maps{
+    display: flex;
+}
+.endFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color:#9FB8AD;
 }
 
 @media (max-width:700px){
